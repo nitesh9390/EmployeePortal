@@ -1,0 +1,55 @@
+package com.example.demo.entity;
+
+import lombok.Data;
+
+@Data
+public class Employee {
+	
+	private int id;
+	private String name;
+	private String password;
+	
+	
+	public Employee() {
+		super();
+	}
+
+	public Employee(String name, String password) {
+		super();
+		this.name = name;
+		this.password = password;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", password=" + password + "]";
+	}
+	
+	
+	
+
+}
